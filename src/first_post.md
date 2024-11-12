@@ -11,7 +11,7 @@ name: Deploy
 on:
   push:
     branches:
-      - gh-pages
+      - main
 
 jobs:
   deploy:
@@ -46,6 +46,7 @@ jobs:
         git add .
         git commit -m "Deploy $GITHUB_SHA to gh-pages"
         git push --force --set-upstream origin gh-pages
+
 ```
 And there you go! You’ve got your very own amazing blog, just like this one.
 
